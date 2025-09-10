@@ -6,7 +6,7 @@
         },
         "wifi-password": {
             "help": "WiFi Password",
-            "value": "\"12345678\""
+            "value": "\"pass\""
         },
         "wifi-tx": {
             "help": "TX pin for serial connection to external device",
@@ -18,3 +18,4 @@
         }
     }
 }
+
