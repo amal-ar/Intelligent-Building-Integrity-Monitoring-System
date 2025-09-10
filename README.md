@@ -31,7 +31,7 @@ Solve the problem of reactive building maintenance by detecting risks early, opt
 ## Software
 - **Firmware**: Mbed OS C++ code on NUCLEO-F401RE:
   - Reads sensors every 15 seconds.
-  - Sends data to ThingSpeak channel 3069029 (fields 1-6, 8).
+  - Sends data to ThingSpeak channel 12345 (fields 1-6, 8).
   - Controls PC_7 based on field 7 (temperature > 26°C = `1`).
 - **ThingSpeak**:
   - Channel stores data:
