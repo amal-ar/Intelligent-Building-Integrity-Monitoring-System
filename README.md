@@ -12,7 +12,7 @@ Solve the problem of reactive building maintenance by detecting risks early, opt
 - **Real-Time Monitoring**: Tracks building conditions every 15 seconds.
 - **Risk Detection**: Spots issues like high temperatures, vibrations, or fires.
 - **Energy Savings**: Adjusts systems like heating to reduce waste.
-- **Automated Control**: Activates devices (e.g., LEDs, relays) based on data.
+- **Automated Control**: Activates devices (e.g., LEDs) based on data.
 - **Cloud Insights**: Uses ThingSpeak for data storage and visualization.
 
 ## Hardware
