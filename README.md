@@ -44,6 +44,15 @@ Solve the problem of reactive building maintenance by detecting risks early, opt
     - Field 7: Control (0 or 1)
     - Field 8: Vibration (0 or 1)
   - API Keys: Read (`key`), Write (`key`).
+
+ 
+  <img width="539" height="251" alt="Picture6" src="https://github.com/user-attachments/assets/7ddcc889-b3ca-47bc-917f-5c19c19c480a" />
+
+  <img width="590" height="276" alt="Picture7" src="https://github.com/user-attachments/assets/a91e7f68-b9af-45bb-a561-a988416d0e41" />
+
+  
 - **MATLAB Analysis**: Runs every 15 seconds on ThingSpeak:
   - Reads field 3 (temperature).
   - Sets field 7 to `1` if >26°C, else `0`.
+
+
