@@ -33,9 +33,10 @@ ESP8266Interface wifi(MBED_CONF_APP_WIFI_TX, MBED_CONF_APP_WIFI_RX);
 #define SERVER_HOST "api.thingspeak.com"
 #define SERVER_PORT 80
 #define SERVER_PATH "/update"
-#define WRITE_API_KEY "MVHOVDISFVDQVT8B" // ThingSpeak Write API Key
-#define READ_API_KEY "QM4K7UO9YGP8QCHA" // ThingSpeak Read API Key
-#define CHANNEL_ID "3069029" // ThingSpeak Channel ID
+//Change Key
+#define WRITE_API_KEY "W_Key" // ThingSpeak Write API Key
+#define READ_API_KEY "R_Key" // ThingSpeak Read API Key
+#define CHANNEL_ID "ID" // ThingSpeak Channel ID
 #define READ_FIELD "7" // Field to read (e.g., field7 for control value)
 
 #define BMP180_ADDRESS_WRITE 0xEE
@@ -336,10 +337,10 @@ bool send_sensor_data(NetworkInterface *net, int humidity, int dht_temperature, 
             pc.printf("Response body: [%s]\r\n", body);
             int entry_id = atoi(body);
             if (entry_id > 0) {
-                pc.printf("✅ Data successfully sent to ThingSpeak, Entry ID: %d\r\n", entry_id);
+                pc.printf("Data successfully sent to ThingSpeak, Entry ID: %d\r\n", entry_id);
                 success = true;
             } else {
-                pc.printf("⚠️ ThingSpeak returned 0 (update failed)\r\n");
+                pc.printf("ThingSpeak returned 0 (update failed)\r\n");
             }
         } else {
             char *lastline = strrchr(rbuffer, '\n');
@@ -347,17 +348,17 @@ bool send_sensor_data(NetworkInterface *net, int humidity, int dht_temperature, 
                 int entry_id = atoi(lastline);
                 pc.printf("Fallback body parse: [%s]\r\n", lastline);
                 if (entry_id > 0) {
-                    pc.printf("✅ Data successfully sent to ThingSpeak, Entry ID: %d\r\n", entry_id);
+                    pc.printf("Data successfully sent to ThingSpeak, Entry ID: %d\r\n", entry_id);
                     success = true;
                 } else {
-                    pc.printf("⚠️ ThingSpeak returned 0 (update failed)\r\n");
+                    pc.printf("ThingSpeak returned 0 (update failed)\r\n");
                 }
             } else {
-                pc.printf("❌ No response body found\r\n");
+                pc.printf("No response body found\r\n");
             }
         }
     } else {
-        pc.printf("❌ Failed to receive response: %d\r\n", rcount);
+        pc.printf("Failed to receive response: %d\r\n", rcount);
     }
 
     socket.close();
