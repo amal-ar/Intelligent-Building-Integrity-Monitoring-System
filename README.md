@@ -1,9 +1,9 @@
 
 
-# APeX_Project: Intelligent Building Integrity Monitoring System
+Intelligent Building Integrity Monitoring System
 
 ## Overview
-The **APeX_Project** is a simple IoT system that monitors buildings in real-time, predicts their condition, and provides insights to prevent issues. Unlike traditional building management, which misses early warning signs, this system uses sensors and analytics to detect problems like structural weaknesses, leaks, or fire hazards. It supports timely maintenance, saves energy, reduces costs, and keeps residents safe.
+The **Intelligent Building Integrity Monitoring System Project** is a simple IoT system that monitors buildings in real-time, predicts their condition, and provides insights to prevent issues. Unlike traditional building management, which misses early warning signs, this system uses sensors and analytics to detect problems like structural weaknesses, leaks, or fire hazards. It supports timely maintenance, saves energy, reduces costs, and keeps residents safe. The project is developed by team ApeX for Hackathon "Small components, Big ideas".
 
 ## Main Goal
 Solve the problem of reactive building maintenance by detecting risks early, optimizing energy use, and preventing costly repairs or resident relocation.
